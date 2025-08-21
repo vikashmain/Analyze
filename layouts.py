@@ -3,7 +3,7 @@ from dash import html
 import dash_daq as daq
 import dash_bootstrap_components as dbc
 import dash_cytoscape as cyto
-from src import settings
+import settings
 
 base = html.Div([
     dcc.Location(id='url', refresh=False),
