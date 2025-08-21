@@ -3,7 +3,7 @@ from datetime import datetime
 from sqlalchemy import create_engine
 import sqlite3
 import pandas as pd
-from src.settings import DATABASE_URL
+from settings import DATABASE_URL
 
 def generate_url(n, unique=True):
     """Generate url key."""
