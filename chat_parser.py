@@ -3,9 +3,9 @@ import json
 from datetime import datetime
 import pandas as pd
 import numpy as np
-from src import db_handler as db
-from src.settings import LANGUAGE, PATTERN, LINK_LOCATION
-from src.emoji import EMOJI, DEMOJI, CLEANER
+import db_handler as db
+from settings import LANGUAGE, PATTERN, LINK_LOCATION
+from emoji import EMOJI, DEMOJI, CLEANER
 
 emoji_pattern = re.compile('|'.join(sorted([re.escape(emo) for emo in EMOJI], key=len, reverse=True)))
 demoji_pattern = re.compile('|'.join(DEMOJI))
