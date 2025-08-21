@@ -2,9 +2,9 @@ from collections import Counter
 import base64
 from io import BytesIO
 from wordcloud import WordCloud
-from src.chat_parser import encode_emoji
-from src.settings import CHART_HEIGHT, DAYS, HOURS, CATEGORIES, CONTENT, LANGUAGE
-from src.stopwords import get_stopwords
+from chat_parser import encode_emoji
+from settings import CHART_HEIGHT, DAYS, HOURS, CATEGORIES, CONTENT, LANGUAGE
+from stopwords import get_stopwords
 
 def chart1(df, interval):
     """Generate time series figure chart."""
