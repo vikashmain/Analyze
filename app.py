@@ -7,7 +7,7 @@ from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
-from src import charts, chat_parser, layouts, settings
+import charts, chat_parser, layouts, settings
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, settings.FONT_AWESOME])
 server = app.server
